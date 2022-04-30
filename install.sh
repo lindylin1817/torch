@@ -110,7 +110,7 @@ eval "$setup_lua_env_cmd"
 echo "Installing common Lua packages"
 cd ${THIS_DIR}/extra/luafilesystem && $PREFIX/bin/luarocks make rockspecs/luafilesystem-1.6.3-1.rockspec || exit 1
 cd ${THIS_DIR}/extra/penlight && $PREFIX/bin/luarocks make penlight-scm-1.rockspec || exit 1
-cd ${THIS_DIR}/extra/lua-cjson && $PREFIX/bin/luarocks make lua-cjson-2.1devel-1.rockspec || exit 1
+cd ${THIS_DIR}/extra/lua-cjson && $PREFIX/bin/luarocks make || exit 1
 
 echo "Installing core Torch packages"
 cd ${THIS_DIR}/extra/luaffifb && $PREFIX/bin/luarocks make luaffi-scm-1.rockspec       || exit 1
